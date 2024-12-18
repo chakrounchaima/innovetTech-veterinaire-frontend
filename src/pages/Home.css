@@ -1,11 +1,13 @@
-.wrapper{
+.wrapper {
     display: flex;
     flex-direction: row;
-}
-.side{
-display: flex;
-/* margin-right: 20%; */
-}
-.dash{
-    width: 100%;
-}
+    width: 100vw;
+    height: 100vh;
+  }
+  .side {
+    flex: 0 0 250px;
+  }
+  
+  .dash {
+    flex: 1;
+  }

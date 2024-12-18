@@ -1,5 +1,5 @@
-
 import "./Dashbord.css";
+import Planning from "./plannig";
 
 function Dashboard() {
   return (
@@ -30,15 +30,22 @@ function Dashboard() {
           <div className="doctor">Dr. Kartik Aryan</div>
         </div>
       </div>
-
+      <Planning />
       <div className="stats">
         <div className="clinical-stats">
           <h3>Suivi des Opérations Cliniques</h3>
-          <p>Taux d'occupation : <b>85%</b></p>
-          <p>Temps moyen de consultation : <b>45 min</b></p>
-          <p>Satisfaction client : <b>4.8/5</b></p>
+          <p>
+            Taux d'occupation : <b>85%</b>
+          </p>
+          <p>
+            Temps moyen de consultation : <b>45 min</b>
+          </p>
+          <p>
+            Satisfaction client : <b>4.8/5</b>
+          </p>
         </div>
       </div>
+      <div style={{ color: "black" }}>mena ai</div>
     </div>
   );
 }
