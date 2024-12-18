@@ -1,0 +1,11 @@
+.wrapper{
+    display: flex;
+    flex-direction: row;
+}
+.side{
+display: flex;
+/* margin-right: 20%; */
+}
+.dash{
+    width: 100%;
+}
