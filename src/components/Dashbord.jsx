@@ -1,8 +1,10 @@
+import Calendar from "./calander";
 import "./Dashbord.css";
-import Planning from "./plannig";
+
 
 function Dashboard() {
   return (
+   
     <div className="dashboard">
       <div className="patients">
         <div className="patient-card">
@@ -30,7 +32,11 @@ function Dashboard() {
           <div className="doctor">Dr. Kartik Aryan</div>
         </div>
       </div>
-      <Planning />
+       <div>
+       <Calendar />
+       </div>
+     
+      
       <div className="stats">
         <div className="clinical-stats">
           <h3>Suivi des Opérations Cliniques</h3>
