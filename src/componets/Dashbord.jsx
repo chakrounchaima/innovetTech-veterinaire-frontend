@@ -1,5 +1,6 @@
 import Calendar from "./calander";
 import "./Dashbord.css";
+import Statistiques from "./Statistiques";
 
 
 function Dashboard() {
@@ -31,13 +32,28 @@ function Dashboard() {
           <p>Attente : 30 min</p>
           <div className="doctor">Dr. Kartik Aryan</div>
         </div>
+        <div className="patient-card">
+          <p className="date">02 Juin 23</p>
+          <h3>Tempête</h3>
+          <p>Suivi opératoire</p>
+          <p>8 ans - Appaloosa</p>
+          <p>Attente : 30 min</p>
+          <div className="doctor">Dr. Kartik Aryan</div>
+        </div>
+        <div className="patient-card">
+          <p className="date">02 Juin 23</p>
+          <h3>Tempête</h3>
+          <p>Suivi opératoire</p>
+          <p>8 ans - Appaloosa</p>
+          <p>Attente : 30 min</p>
+          <div className="doctor">Dr. Kartik Aryan</div>
+        </div>
       </div>
-       <div>
+
+       <div style={{color: " black"}}>
        <Calendar />
        </div>
-     
-      
-      <div className="stats">
+       <div className="stats">
         <div className="clinical-stats">
           <h3>Suivi des Opérations Cliniques</h3>
           <p>
@@ -50,8 +66,14 @@ function Dashboard() {
             Satisfaction client : <b>4.8/5</b>
           </p>
         </div>
+       <div>
+        <Statistiques />
+       </div>
+     
+      
+      
       </div>
-      <div style={{ color: "black" }}>mena ai</div>
+     
     </div>
   );
 }

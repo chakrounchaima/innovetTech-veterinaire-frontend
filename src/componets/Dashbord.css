@@ -11,37 +11,56 @@
   display: flex;
   gap: 15px; /* Espacement entre les cartes */
   margin-bottom: 20px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+}
+.patients::-webkit-scrollbar {
+  display: none; 
+}
+
+.patients::-webkit-scrollbar-thumb {
+  background: #aaa;
+  border-radius: 4px;
+}
+
+.patients::-webkit-scrollbar-track {
+  background: #e6f3f5;
 }
 
 .patient-card {
-  flex: 1; /* Taille égale pour toutes les cartes */
-  background: #e6f3f5; /* Couleur de fond des cartes */
+  flex: 0 0 calc((100% - 30px) / 5);
+  max-width: calc((100% - 30px) / 5);
+  background: #5ab2c9;;
   padding: 15px;
-  border-radius: 8px; /* Bords arrondis */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
   text-align: center;
-  transition: transform 0.3s ease;
-}
+  color: #ffff;
+ transition: transform 0.3s ease;
 
+}
+  
 .patient-card:hover {
-  transform: translateY(-5px); /* Effet de survol */
+  transform: translateY(-3px); /* Effet de survol */
 }
 
 .patient-card h3 {
   margin: 10px 0;
   font-size: 18px;
-  color: #333;
+  color: #1B2E4E;
 }
 
 .patient-card p {
   font-size: 14px;
-  color: #555;
+  color: #ffffff;
   margin: 5px 0;
 }
 
 .doctor {
   font-size: 12px;
-  color: #3a8b8e; /* Couleur pour le nom du docteur */
+  color: #ffffff; /* Couleur pour le nom du docteur */
   margin-top: 10px;
 }
 /* Bouton Rendez-vous */
@@ -125,7 +144,7 @@
 
 /* Stats Section */
 .clinical-stats {
-  background: #3a8b8e; /* Couleur de fond des stats */
+  background: #1e1e1e; /* Couleur de fond des stats */
   color: white;
   padding: 20px;
   border-radius: 8px;
@@ -141,4 +160,8 @@
 .clinical-stats p {
   margin: 5px 0;
   font-size: 14px;
+}
+.fc {
+  height: 500px;
+  margin-bottom: 20px;
 }

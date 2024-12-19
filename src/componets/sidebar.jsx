@@ -4,6 +4,7 @@ import "./sidebar.css";
 function Sidebar() {
   return (
     <div className="sidebar">
+         
       <div className="profile">
         <img
           src="/a5282b956178fe69b6a554da12c9c7c4.jpg" 
